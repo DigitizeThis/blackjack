@@ -1,0 +1,37 @@
+.jacktable {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    color: #fff;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    padding-top: 5.8em;
+    z-index: -1;
+
+    section {
+        height: 100vmin;
+
+        .wrap-bj {
+            margin-top: 40%;//28em
+            background-color: #00763a;
+            @include borderRadius(5px);
+            padding: 5em;
+        }
+
+        hr {
+            background-color: white;
+            opacity: 0.3;
+        }
+    }
+}
+
+.cardwrap {
+    display: inline-block;
+}

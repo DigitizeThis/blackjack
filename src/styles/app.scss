@@ -1,0 +1,14 @@
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Variables/ Mixins
+@import "app/common/variables";
+@import "app/common/mixins";
+// Layout
+@import "app/layout/layout";
+// Elements
+@import "app/pages/feature";
+@import "app/pages/home";
+
+// Common
+@import "app/common/typo";

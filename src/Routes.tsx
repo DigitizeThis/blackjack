@@ -48,7 +48,6 @@ const Routes = ({ location }: Props) => {
                                 <Switch location={location}>
                                     {/*Feature*/}
                                     <Route path="/feature" component={waitFor(Feature)} />
-                                    {/*<Redirect to="/feature"/>*/}
                                 </Switch>
                             </Suspense>
                         </div>

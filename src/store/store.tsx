@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 export const history = createBrowserHistory();
 export const routerMiddleware = createRouterMiddleware(history);
 
-export default function configureStore(initialState?: RootState) {
+export default function configureStore(initialState?: RootState) {    
     const middlewares = [routerMiddleware];
     const enhancer = compose(
         applyMiddleware(...middlewares, thunk)
@@ -15,12 +15,11 @@ export default function configureStore(initialState?: RootState) {
 
     const store = createStore(
         gameReducer,
-        initialState!,
+        initialState,
         enhancer
     );
 
     console.log(store.getState());
-    const unsubscribe = store.subscribe(() => console.log(store.getState()));
 
     return store;
 };

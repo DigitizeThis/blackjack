@@ -11,6 +11,8 @@ const styles = {
 };
 
 interface Props {
+    label: string;
+    cards: any[]
 }
 
 class Feature extends React.Component<Props> {
@@ -38,7 +40,6 @@ class Feature extends React.Component<Props> {
             </ContentWrapper>
         );
     }
-
 }
 
 export default Feature;

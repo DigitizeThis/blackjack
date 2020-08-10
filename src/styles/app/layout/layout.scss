@@ -40,10 +40,10 @@ code {
 
 .mastfoot {
     color: rgba(255, 255, 255, .5);
-    bottom: 1%;
     position: absolute;
     margin: 0 auto;
     left: 0;
+    top: 94%;
     @include media-breakpoint-down(md) {
         bottom: 0%;
     }
@@ -52,7 +52,7 @@ code {
         display: none;
     }
 
-    @media screen and (orientation: landscape) {
+    @media screen and (max-width: 767px) and (orientation: landscape) {
         display: none;
     }
 }

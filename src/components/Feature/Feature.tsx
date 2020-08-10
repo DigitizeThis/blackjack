@@ -23,7 +23,7 @@ class Feature extends React.Component<Props> {
             <ContentWrapper>
                 <div className="jacktable" style={styles.tableContainer}>
                     <section>
-                        <div className="container px-md-0 px-sm-0">
+                        <div className="container px-md-0 px-sm-0 px-xs-0">
                             <div className="text-center mt-5">
                                 <h1>Pick a Card</h1>
                             </div>

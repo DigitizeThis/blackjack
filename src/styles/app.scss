@@ -8,6 +8,10 @@
 @import "app/layout/layout";
 // Elements
 @import "app/pages/feature";
+@import "app/pages/cards/Card.module";
+@import "app/pages/cards/Controls.module";
+@import "app/pages/cards/Hand.module";
+@import "app/pages/cards/Status.module";
 @import "app/pages/home";
 
 // Common

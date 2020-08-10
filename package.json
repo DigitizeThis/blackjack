@@ -43,6 +43,7 @@
     "@types/shuffle-array": "^1.0.0",
     "bootstrap": "4.5.0",
     "cards": "^0.1.1",
+    "gh-pages": "^2.1.1",
     "jquery": "^1.9.1",
     "loaders.css": "0.1.2",
     "modernizr": "3.7.1",

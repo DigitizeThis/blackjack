@@ -1,7 +1,8 @@
 import * as React from 'react';
 
 import ContentWrapper from '../Layout/ContentWrapper';
-import BlackjackGame from '../BlackjackGame/BlackjackGame';
+//import BlackjackGame from '../BlackjackGame/BlackjackGame';
+import BlackJack from '../BlackjackGame/BlackJack';
 import { Row, Col } from 'reactstrap';
 
 const styles = {
@@ -30,7 +31,7 @@ class Feature extends React.Component<Props> {
                             <div className="wrap-bj">
                                 <Row>
                                     <Col md={ 12 }>
-                                        <BlackjackGame />
+                                        <BlackJack />
                                     </Col>
                                 </Row>
                             </div>

@@ -4,6 +4,8 @@ import * as actions from '../../store/actions/actions';
 import { RootState } from "../../store/reducers/reducers";
 import { statuses, GameModel } from '../../store/reducers/game.reducer';
 
+import { newShuffledPokerDeck, calculatePlayerScore, card } from '../../store/cards';
+
 interface Props {
     gameState: GameModel;
     actions: any;
@@ -45,15 +47,14 @@ export const Card = ({ color, face, faceDown }: CardProps) =>
     ? <span>? </span>
     : <div className="cardwrap" style={ Object.assign(styles.cardContainer, { color }) }>{ face } </div>;
 
-export const Hand: React.SFC<LabelProps> = (props) => {
+export const Hand: React.SFC<LabelProps> = ({ label, cards }) => {
     
-    const { label, cards } = props;
-
+    console.log({ label, cards });
     return (
         <div>
             <label>{ label }</label>
             {
-                cards && cards.map((card, i) =>                     
+                cards && cards.map((card, i) =>
                     <Card
                         face={ card.face }
                         faceDown={ card.faceDown }

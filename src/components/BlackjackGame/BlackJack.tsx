@@ -49,8 +49,6 @@ const BlackJack: React.FC = () => {
 		resetDisabled: true
 	});
 
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-
 	useEffect(() => {
 		if (gameState === GameState.init) {
 			drawCard(Deal.user);
@@ -60,16 +58,19 @@ const BlackJack: React.FC = () => {
 			setGameState(GameState.userTurn);
 			setMessage(Message.hitStand);
 		}
+	// eslint-disable-next-line
 	}, [gameState]);
 
 	useEffect(() => {
 		calculate(userCards, setUserScore);
 		setUserCount(userCount + 1);
+		// eslint-disable-next-line
 	}, [userCards]);
 
 	useEffect(() => {
 		calculate(dealerCards, setDealerScore);
 		setDealerCount(dealerCount + 1);
+		// eslint-disable-next-line
 	}, [dealerCards]);
 
 	useEffect(() => {
@@ -82,6 +83,7 @@ const BlackJack: React.FC = () => {
 				bust();
 			}
 		}
+		// eslint-disable-next-line
 	}, [userCount]);
 
 	useEffect(() => {
@@ -93,9 +95,8 @@ const BlackJack: React.FC = () => {
 				drawCard(Deal.dealer);
 			}
 		}
+		// eslint-disable-next-line
 	}, [dealerCount]);
-
-	// eslint-disable-next-line react-hooks/exhaustive-deps
 
 	const resetGame = () => {
 		console.clear();

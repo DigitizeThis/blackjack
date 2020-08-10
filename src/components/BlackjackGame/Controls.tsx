@@ -17,6 +17,7 @@ const Controls: React.FC<ControlsProps> = ({ balance, gameState, buttonState, be
 
 	useEffect(() => {
 		validation();
+		// eslint-disable-next-line
 	}, [amount, balance]);
 
 	const validation = () => {

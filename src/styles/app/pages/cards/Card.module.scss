@@ -43,13 +43,13 @@
 
 @media screen and (max-width: 992px) {
 	.card {
-		width: 70px;
+		width: 126px;
 		height: 180px;
 	}
 
 	.hiddenCard {
-		width: 60px;
-		height: 170px;
+		width: 126px;
+		height: 180px;
 	}
 
 	.value {
@@ -63,14 +63,14 @@
 
 @media screen and (max-width: 600px) {
 	.card {
-		width: 45px;
+		width: 60px;
 		height: 100px;
 		padding: 5px 10px;
 	}
 
 	.hiddenCard {
-		width: 41px;
-		height: 96px;
+		width: 60px;
+		height: 100px;
 		padding: 5px 10px;
 		border: 2px solid white;
 	}

@@ -17,18 +17,32 @@
 
     section {
         height: 100vmin;
-
         .wrap-bj {
             margin-top: 5%;//28em
             background-color: #00763a;
             @include borderRadius(5px);
             padding: 5em;
+            @include media-breakpoint-down(lg) {
+                padding: 0.5em 0 2em;
+                margin-bottom: 4em;
+                @include borderRadius(20px);
+            }
         }
-
         hr {
             background-color: white;
             opacity: 0.3;
         }
+        @include media-breakpoint-down(lg) {
+            //padding-bottom: 5%;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        position: absolute;
+        padding-top: 5em;
+        overflow: visible;
+        overflow-y: scroll;
+        height: 145vmin;
+        margin: 0 auto 0%;
     }
 }
 
